@@ -39,6 +39,9 @@ public class PropertiesLocator {
 		return location + " " + ptype;
 	}
 
+
+
+
 	@GET
 	@Produces(MediaType.APPLICATION_XML)
 	@Path("/segment")
