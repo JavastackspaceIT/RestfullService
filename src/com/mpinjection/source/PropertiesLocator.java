@@ -38,7 +38,7 @@ public class PropertiesLocator {
 			@QueryParam("ptype") List<String> ptype) {
 		return location + " " + ptype;
 	}
-
+//getProperties
 	@GET
 	@Produces(MediaType.APPLICATION_XML)
 	@Path("/segment")
