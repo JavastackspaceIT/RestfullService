@@ -21,6 +21,8 @@ public class PropertiesLocator {
 	 **
 	 * uri=http://localhost:8088/MatrixParameterInjection/api/locator/hyderabad/property/land;max=50;min=90
 	 **/
+	
+	//getProperties for getting 
 	@GET
 	@Produces(MediaType.APPLICATION_XML)
 	@Path("/property/{ptype}")
