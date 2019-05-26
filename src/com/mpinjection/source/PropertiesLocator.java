@@ -21,6 +21,8 @@ public class PropertiesLocator {
 	 **
 	 * uri=http://localhost:8088/MatrixParameterInjection/api/locator/hyderabad/property/land;max=50;min=90
 	 **/
+	
+	//getProperties for getting 
 	@GET
 	@Produces(MediaType.APPLICATION_XML)
 	@Path("/property/{ptype}")
@@ -38,10 +40,14 @@ public class PropertiesLocator {
 			@QueryParam("ptype") List<String> ptype) {
 		return location + " " + ptype;
 	}
+<<<<<<< HEAD
 
 
 
 
+=======
+//getProperties
+>>>>>>> 0867a239991c53a42cff82c30db4b59b9a8f4035
 	@GET
 	@Produces(MediaType.APPLICATION_XML)
 	@Path("/segment")
