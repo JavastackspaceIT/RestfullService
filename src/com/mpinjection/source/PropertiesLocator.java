@@ -33,6 +33,11 @@ public class PropertiesLocator {
 				+ "</property></getProperties>";
 	}
 //This metho        
+
+
+
+
+
 	@GET
 	@Produces(MediaType.APPLICATION_XML)
 	@Path("/details")
