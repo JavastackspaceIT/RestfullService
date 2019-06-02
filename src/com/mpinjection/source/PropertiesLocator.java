@@ -32,7 +32,6 @@ public class PropertiesLocator {
 		return "<getProperties><location>" + location + "</location><property>" + property
 				+ "</property></getProperties>";
 	}
-//This metho
 	@GET
 	@Produces(MediaType.APPLICATION_XML)
 	@Path("/details")
