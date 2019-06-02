@@ -32,7 +32,7 @@ public class PropertiesLocator {
 		return "<getProperties><location>" + location + "</location><property>" + property
 				+ "</property></getProperties>";
 	}
-//This method is use for getting the details
+//This metho        
 	@GET
 	@Produces(MediaType.APPLICATION_XML)
 	@Path("/details")
@@ -41,6 +41,16 @@ public class PropertiesLocator {
 		return location + " " + ptype;
 	}
 //getProperties
+	@GET
+	@Produces(MediaType.APPLICATION_XML)
+	@Path("/segment")
+	public String getProperties(@PathParam("location") PathSegment locationSegment, @MatrixParam("segment") int area) {
+		String path = locationSegment.getPath();
+		System.out.println(path);
+		return null;
+	}
+	
+	//getProperties
 	@GET
 	@Produces(MediaType.APPLICATION_XML)
 	@Path("/segment")
